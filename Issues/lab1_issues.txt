@@ -1,0 +1,6 @@
+Task 2:
+ - filterYear trebuie sa ia ca parametru doar int year, nu sut students, trebuie sa folosesti vectorul de students din clasa.
+
+ - in clasa Test trebuie sa setezi students in clasa Course si sa nu apelezi filterYear dandu-l ca parametru, exact ce am zis mai sus
+
+ - sterge liniile goale care nu sunt necesare

@@ -31,11 +31,11 @@ public class Test {
         courseTest.filterYear(3, stu);
 
         Student s1 = new Student();
-        s1.setName("Marian Sefu");
+        s1.setName("Marian");
         s1.setYear(3);
 
         Student s2 = new Student();
-        s2.setName("Marian Sefu");
+        s2.setName("Marian");
         s2.setYear(3);
 
         System.out.println(s1.equals(s2));
