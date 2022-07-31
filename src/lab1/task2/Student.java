@@ -20,8 +20,8 @@ public class Student {
         this.year = year;
     }
 
-    @Override
-    public String toString() {
+     @Override
+  public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
