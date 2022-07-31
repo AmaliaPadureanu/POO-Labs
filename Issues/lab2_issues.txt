@@ -1,0 +1,6 @@
+Task 1:
+ - metoda addWithComplex e gresita, trebuie adunate componentele numarului complex dat ca parametru la componentele din clasa, tu doar declari 3 variabile care nu sunt folosite nicaieri
+
+ - metoda showNumber nu trebuie sa aiba niciun parametru si trebuie sa printeze componentele numarului complex, acum printeaza referinta la obiectul Complex
+
+Task 2: 
