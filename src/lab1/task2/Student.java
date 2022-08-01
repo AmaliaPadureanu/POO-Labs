@@ -7,7 +7,6 @@ public class Student {
     String getName() {
         return name;
     }
-
     void setName(String name) {
         this.name = name;
     }
@@ -15,7 +14,6 @@ public class Student {
     Integer getYear() {
         return year;
     }
-
     void setYear(Integer year) {
         this.year = year;
     }

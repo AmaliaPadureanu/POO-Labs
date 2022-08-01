@@ -2,10 +2,6 @@ package lab1.task2;
 
 public class Test {
     public static void main(String[] args) {
-        Course courseTest = new Course();
-        courseTest.setTitle("Math");
-        courseTest.setDescription("Learning math");
-
         Student[] stu = new Student[5];
 
         stu[0]  = new Student();
@@ -28,14 +24,19 @@ public class Test {
         stu[4].setName("Georgel");
         stu[4].setYear(2);
 
-        courseTest.filterYear(3, stu);
+        Course courseTest = new Course();
+        courseTest.setTitle("Math");
+        courseTest.setDescription("Learning math");
+        courseTest.setStudents(stu);
+
+        courseTest.filterYear(1);
 
         Student s1 = new Student();
-        s1.setName("Marian Sefu");
+        s1.setName("Marian");
         s1.setYear(3);
 
         Student s2 = new Student();
-        s2.setName("Marian Sefu");
+        s2.setName("Marian");
         s2.setYear(3);
 
         System.out.println(s1.equals(s2));
