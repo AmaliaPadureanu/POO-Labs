@@ -22,7 +22,6 @@ public class Complex {
     public int getReal() {
         return real;
     }
-
     public void setReal(int real) {
         this.real = real;
     }
@@ -30,18 +29,18 @@ public class Complex {
     public int getImaginary() {
         return imaginary;
     }
-
     public void setImaginary(int imaginary) {
         this.imaginary = imaginary;
     }
 
     public void addWithComplex(Complex complex) {
-        int addReal = this.real + complex.real;
-        int addImaginary = this.imaginary + complex.imaginary;
+        int addReal = this.getReal() + complex.getReal();
+        int addImaginary = this.getImaginary() + complex.getImaginary();
         int result = addReal + addImaginary;
+        System.out.println(result);
     }
 
-    public void showNumber(Complex complex) {
-        System.out.println(complex);
+    public void showNumber() {
+        System.out.println(real + "i" + imaginary);
     }
 }
