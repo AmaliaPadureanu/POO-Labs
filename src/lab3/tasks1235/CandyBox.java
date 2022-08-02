@@ -1,4 +1,4 @@
-package lab3.task1;
+package lab3.tasks1235;
 
 import java.util.Objects;
 
@@ -6,17 +6,20 @@ public class CandyBox {
     private String flavor;
     private String origin;
 
-    CandyBox() {
+    public CandyBox() {}
 
-    }
-
-    CandyBox(String flavor, String origin) {
+    public CandyBox(String flavor, String origin) {
         this.flavor = flavor;
         this.origin = origin;
     }
 
     public float getVolume() {
         return 0;
+    }
+
+    //METODA CARE VA FI SUPRASCRISA IN CLASELE DERIVATE ASTFEL INCAT SA NU MAI FIE NEVOIE DE INSTANCE OF
+    public void printDim() {
+        System.out.println(0);
     }
 
     @Override

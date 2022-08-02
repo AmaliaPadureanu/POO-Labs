@@ -1,13 +1,11 @@
-package lab3.task1;
+package lab3.tasks1235;
 
 public class ChocAmor extends CandyBox {
    float length;
 
-   ChocAmor() {
+   public ChocAmor() {}
 
-   }
-
-   ChocAmor(String flavor, String origin, float length) {
+   public ChocAmor(String flavor, String origin, float length) {
       super(flavor, origin);
       this.length = length;
    }
@@ -21,4 +19,11 @@ public class ChocAmor extends CandyBox {
       return super.toString() + " has volume " + getVolume();
    }
 
+   public void printChocAmorDim() {
+      System.out.print("length = " + length + "\n");
+   }
+
+   public void printDim() {
+      System.out.print("length = " + length + "\n");
+   }
 }
