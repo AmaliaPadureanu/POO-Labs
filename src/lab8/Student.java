@@ -32,7 +32,6 @@ public class Student implements Comparable<Student> {
         return averageGrade;
     }
 
-
     @Override
     public int compareTo(Student o) {
         int averageComparison = Double.compare(this.averageGrade, o.averageGrade);
@@ -80,14 +79,11 @@ public class Student implements Comparable<Student> {
 
         ArrayList<Student> students = new ArrayList<>(Arrays.asList(s1, s2, s3, s4, s5));
 
-        System.out.print(s1);
-
-        /*Collections.sort(students);
+        Collections.sort(students);
         students.forEach(System.out::println);
+
         students.sort((o1, o2) -> Double.compare(o2.getAverageGrade(), o1.getAverageGrade()));
-        System.out.println();
         students.forEach(System.out::println);
-
 
         PriorityQueue<Student> priorityQueue = new PriorityQueue<>(new Comparator<>() {
             @Override
@@ -102,9 +98,6 @@ public class Student implements Comparable<Student> {
             System.out.print(s + "\n");
         }
 
-
-       // students.forEach(System.out::println);
-
         LinkedList ll = new LinkedList<String>();
         ll.add("Math");
         ll.add("History");
@@ -116,11 +109,5 @@ public class Student implements Comparable<Student> {
         for(Map.Entry<Student, LinkedList<String>> entry : studentSubjects.entrySet()){
             System.out.print(entry.getKey() + " studies " + entry.getValue());
         }
-
-         */
-
-
     }
-
-
 }

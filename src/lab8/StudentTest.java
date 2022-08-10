@@ -22,7 +22,6 @@ public class StudentTest {
         Assertions.assertNotEquals(true, student.equals(new Student("Robert", "Davidescu", 3925, 9.62)));
     }
 
-
     @Test
     @DisplayName("To string test")
     public void testToString() {

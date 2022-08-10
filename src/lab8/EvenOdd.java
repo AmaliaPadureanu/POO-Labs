@@ -22,8 +22,6 @@ public class EvenOdd extends LinkedHashSet {
         isEven.add(245);
         isEven.add(548);
         isEven.add(1);
-
-
         isEven.set.forEach(System.out::println);
     }
 }
