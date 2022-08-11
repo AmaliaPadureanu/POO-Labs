@@ -1,7 +1,4 @@
-package lab9.task1;
-
-import static lab9.task1.Utils.BASIC_STRATEGY;
-import static lab9.task1.Utils.FILTERED_STRATEGY;
+package lab9;
 
 public class DataAggregator implements Observer {
     private String strategy;
@@ -13,11 +10,11 @@ public class DataAggregator implements Observer {
     public void update() {
     StepCountStrategy stepCountStrategy;
         switch (strategy) {
-            case BASIC_STRATEGY -> {
+            case Utils.BASIC_STRATEGY -> {
                 stepCountStrategy =  new BasicStepCountStrategy();
                 System.out.println(stepCountStrategy.getTotalSteps());
             }
-            case FILTERED_STRATEGY -> {
+            case Utils.FILTERED_STRATEGY -> {
                 stepCountStrategy = new FilteredStepCountStrategy();
                 System.out.println(stepCountStrategy.getTotalSteps());
             }

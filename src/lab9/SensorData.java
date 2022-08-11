@@ -1,4 +1,4 @@
-package lab9.task1;
+package lab9;
 
 /**
  * Represents the sensing data sent to the storage component

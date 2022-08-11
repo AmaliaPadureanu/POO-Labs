@@ -1,4 +1,4 @@
-package lab9.task1;
+package lab9;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package lab9.task1;
+package lab9;
 
 public class ConsoleLogger implements Observer {
 

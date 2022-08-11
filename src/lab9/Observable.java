@@ -1,4 +1,4 @@
-package lab9.task1;
+package lab9;
 
 public interface Observable {
     public void register(Observer observer);

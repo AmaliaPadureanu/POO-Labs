@@ -1,4 +1,4 @@
-package lab9.task1;
+package lab9;
 
 /**
  * Defines the operations that can be performed on step data. Each implementation uses its own algorithm.
