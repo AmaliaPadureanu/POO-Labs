@@ -1,7 +1,9 @@
-package lab9;
+package lab9.task1;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static lab9.task1.Utils.FILTERED_STRATEGY;
 
 public class FilteredStepCountStrategy implements StepCountStrategy {
 
@@ -27,6 +29,6 @@ public class FilteredStepCountStrategy implements StepCountStrategy {
 
     @Override
     public String getStrategyDescription() {
-        return Utils.FILTERED_STRATEGY;
+        return FILTERED_STRATEGY;
     }
 }

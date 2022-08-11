@@ -1,4 +1,4 @@
-package lab9;
+package lab9.task1;
 
 /**
  * Represents the content of the message sent to the server.

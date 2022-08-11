@@ -1,6 +1,8 @@
-package lab9;
+package lab9.task1;
 
 import java.util.List;
+
+import static lab9.task1.Utils.BASIC_STRATEGY;
 
 public class BasicStepCountStrategy implements StepCountStrategy {
 
@@ -17,6 +19,6 @@ public class BasicStepCountStrategy implements StepCountStrategy {
 
     @Override
     public String getStrategyDescription() {
-        return Utils.BASIC_STRATEGY;
+        return BASIC_STRATEGY;
     }
 }

@@ -1,4 +1,4 @@
-package lab9;
+package lab9.task1;
 
 public class Utils {
     public static final String BASIC_STRATEGY = "basic";

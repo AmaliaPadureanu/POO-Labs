@@ -1,11 +1,14 @@
-package lab9;
+package lab9.task1;
+
+import static lab9.task1.Utils.BASIC_STRATEGY;
+import static lab9.task1.Utils.FILTERED_STRATEGY;
 
 public class StepCountStrategyFactory {
 
     public static StepCountStrategy createStrategy(String strategyType) {
         switch (strategyType) {
-            case Utils.BASIC_STRATEGY: return new BasicStepCountStrategy();
-            case Utils.FILTERED_STRATEGY: return new FilteredStepCountStrategy();
+            case BASIC_STRATEGY: return new BasicStepCountStrategy();
+            case FILTERED_STRATEGY: return new FilteredStepCountStrategy();
         }
         throw new IllegalArgumentException("The strategy type " + strategyType + " is not recognized.");
     }
