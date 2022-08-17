@@ -116,7 +116,7 @@ public class Test {
         client.showDiagram();
         client.redo();
         client.showDiagram();
-        
+
         client.executeAction("draw rectangle");
         client.executeAction("draw rectangle");
         client.showDiagram();
