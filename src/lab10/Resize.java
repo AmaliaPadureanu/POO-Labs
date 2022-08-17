@@ -26,13 +26,13 @@ public class Resize implements DrawCommand {
 
     @Override
     public void undo() {
-        nextWeight = previousWeight;
-        previousWeight = diagramCanvas.getComponent(element).getWeight();
-        diagramCanvas.getComponent(element).setWeight(nextWeight);
+//        nextWeight = previousWeight;
+//        previousWeight = diagramCanvas.getComponent(element).getWeight();
+        diagramCanvas.getComponent(element).setWeight(previousWeight);
 
-        nextHeight = previousHeight;
-        previousHeight = diagramCanvas.getComponent(element).getHeight();
-        diagramCanvas.getComponent(element).setHeight(nextHeight);
+//        nextHeight = previousHeight;
+//        previousHeight = diagramCanvas.getComponent(element).getHeight();
+        diagramCanvas.getComponent(element).setHeight(previousHeight);
     }
 
     @Override

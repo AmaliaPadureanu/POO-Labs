@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
         Client client = new Client();
 
-        // Execute various tests
+         //Execute various tests
 
         testDraw(client);
         System.out.println(new String(new char[80]).replace("\0", "-"));
@@ -103,6 +103,20 @@ public class Test {
         client.executeAction("draw rectangle");
         client.showDiagram();
 
+        client.executeAction("resize","0", "50", "50");
+        client.executeAction("resize", "1", "20", "30");
+        client.showDiagram();
+
+        client.undo();
+        client.showDiagram();
+        client.undo();
+        client.showDiagram();
+
+        client.redo();
+        client.showDiagram();
+        client.redo();
+        client.showDiagram();
+        
         client.executeAction("draw rectangle");
         client.executeAction("draw rectangle");
         client.showDiagram();
