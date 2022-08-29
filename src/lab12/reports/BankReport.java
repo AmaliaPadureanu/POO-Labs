@@ -58,7 +58,7 @@ public class BankReport {
         Map<Employee, Collection<Account>> customerAccount  = new HashMap<>();
          List<Employee> employees = bank.getClients().stream()
                 .flatMap(business -> business.getEmployees().stream())
-                .collect(Collectors.toList());
+                 .collect(Collectors.toList());
          for(Employee e : employees) {
              customerAccount.put(e, e.getAccounts());
          }
